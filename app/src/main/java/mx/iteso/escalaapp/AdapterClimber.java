@@ -11,32 +11,30 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import mx.iteso.escalaapp.beans.Gym;
+import mx.iteso.escalaapp.beans.Climber;
 
 /**
  * Created by aceve on 03/03/2018.
  */
 
 
-public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHolder> {
+public class AdapterClimber extends RecyclerView.Adapter<AdapterClimber.ViewHolder> {
 
-    ArrayList<Gym> gyms;
-    public AdapterProduct(ArrayList<Gym> products) {
-        this.gyms = products;
+    ArrayList<Climber> climbers;
+    public AdapterClimber(ArrayList<Climber> climbers) {
+        this.climbers = climbers;
     }
 
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView mName;
-        public TextView mDescription;
-        public TextView mCity;
+        public TextView mFirstName;
+        public TextView mLastName;
         public ImageView mImage;
         public RelativeLayout mDetail;
 
         public ViewHolder(View v) {
             super(v);
-            mName = v.findViewById(R.id.item_gym_name);
-            mCity = (TextView) v.findViewById(R.id.item_gym_city);
+            mFirstName = v.findViewById(R.id.item_gym_name);
+            mLastName =  v.findViewById(R.id.item_gym_city);
             mImage = v.findViewById(R.id.item_gym_profile_picture);
             mDetail = v.findViewById(R.id.item_gym_relative);
         }
@@ -52,9 +50,9 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
 
 
     public void onBindViewHolder(ViewHolder holder, final int position) {
-        holder.mName.setText(gyms.get(position).getName());
-        holder.mCity.setText(gyms.get(position).getCity());
-        holder.mImage.setImageDrawable(gyms.get(position).getPhoto());
+        holder.mFirstName.setText(climbers.get(position).getFirstname());
+        holder.mLastName.setText(climbers.get(position).getLastname());
+        holder.mImage.setImageDrawable(climbers.get(position).getPhoto());
         holder.mDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,7 +63,7 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
     }
 
     public int getItemCount() {
-        return gyms.size();
+        return climbers.size();
     }
 
 }

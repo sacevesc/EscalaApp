@@ -99,13 +99,13 @@ import android.view.View;
                 // Return a PlaceholderFragment (defined as a static inner class below).
                 switch (position) {
                     case 0:
-                        return new FragmentProfile();
+                        return new FragmentGym();
                     case 1:
-                        return new FragmentProfile();
+                        return new FragmentClimbers();
                     case 2:
-                        return new FragmentProfile();
+                        return new FragmentClimbers();
                     default:
-                        return new FragmentProfile();
+                        return new FragmentGym();
                 }
             }
 
