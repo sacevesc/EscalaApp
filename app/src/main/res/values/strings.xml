@@ -1,3 +1,81 @@
 <resources>
-    <string name="app_name">EscalaApp</string>
+    <string name="app_name">EscalApp</string>
+    <string name="login_user">User</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_in_facebook">LOGIN WITH FACEBOOK</string>
+
+    <string name="tab_gyms">Gyms</string>
+    <string name="tab_competitions">Competitions</string>
+    <string name="tab_climbers">Climbers</string>
+
+    <string name="climber_profile_results">Results</string>
+    <string name="climber_profile_results_top_results">Top Results</string>
+    <string name="climber_profile_results_all_time">All Time</string>
+    <string name="climber_profile_results_months_12">Last 12 Months</string>
+
+    <string name="gym_profile_podiums">Podiums</string>
+    <string name="gym_profile_members">Members</string>
+    <string name="gym_profile_host">Host</string>
+
+    <string name="gym_profile_competitions">Competitions</string>
+    <string name="gym_competitions_final_results">Final Results</string>
+    <string name="competitions_results_general">General</string>
+    <string name="competitions_results_finals">Finals</string>
+    <string name="competitions_results_semifinals">SemiFinals</string>
+    <string name="competitions_results_qualifications">Qualifications</string>
+
+    <string name="competitions_ended">Ended</string>
+    <string name="competitions_comingup">Coming Up</string>
+    <string name="competitions_comingup_more_info">More</string>
+    <string name="competitions_comingup_register">Register</string>
+
+    <string name="competitions_live_results">Live Results</string>
+
+
+    <string name="settings_notifications">NOTIFICACTIONS</string>
+    <string name="settings_invite_friend">INVITE A FRIEND</string>
+    <string name="settings_contact">CONTACT</string>
+    <string name="settings_help">HELP</string>
+    <string name="settings_add_gym">¿Do you own a gym?</string>
+    <string name="settings_gym_profile">GYM PROFILE</string>
+    <string name="settings_gym_create_competition">CRATE A COMPETITION</string>
+    <string name="settings_gym_help">GYM HELP</string>
+
+    <string name="new_comp_add_judges">Add Judges</string>
+    <string name="new_comp_add_climbers">Register Climbersa</string>
+    <string name="new_comp_done">DONE</string>
+    <string name="competition_judge">Judge</string>
+    <string name="competition_judge_climber_id">Climber ID</string>
+    <string name="competition_judge_add_try">Add Try</string>
+    <string name="competition_judge_add_bonus">BONUS</string>
+    <string name="competition_judge_add_top">TOP</string>
+    <string name="competition_judge_add_climber_id">Add ID</string>
+    <string name="competition_judge_start">Start</string>
+    <string name="competition_judge_stop">Stop</string>
+    <string name="competition_judge_undo">Undo</string>
+
+    <string name="hint_search">Search climbers</string>
+    <string name="hint_login">sacevesc@gmail.com</string>
+
+    <string name="notification_judge_invitation">asked you to be a judge at</string>
+    <string name="notification_judge_invitation_accept">¿Accept?</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
