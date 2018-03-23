@@ -25,38 +25,44 @@ public class AdapterClimber extends RecyclerView.Adapter<AdapterClimber.ViewHold
         this.climbers = climbers;
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView mFirstName;
-        public TextView mLastName;
-        public ImageView mImage;
-        public RelativeLayout mDetail;
-
-        public ViewHolder(View v) {
-            super(v);
-            mFirstName = v.findViewById(R.id.item_gym_name);
-            mLastName =  v.findViewById(R.id.item_gym_city);
-            mImage = v.findViewById(R.id.item_gym_profile_picture);
-            mDetail = v.findViewById(R.id.item_gym_relative);
-        }
-    }
-
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_gym, parent, false);
+                .inflate(R.layout.item_climber, parent, false);
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
 
-
-
     public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.mFirstName.setText(climbers.get(position).getFirstname());
         holder.mLastName.setText(climbers.get(position).getLastname());
-        holder.mImage.setImageDrawable(climbers.get(position).getPhoto());
+        holder.mGym.setText(climbers.get(position).getGym());
+
+        switch (climbers.get(position).getPhoto()) {
+            case 0:
+                holder.mImage.setImageResource(R.drawable.arturo_perfil);
+                break;
+            case 1:
+                holder.mImage.setImageResource(R.drawable.ger_perfil);
+                break;
+            case 2:
+                holder.mImage.setImageResource(R.drawable.keko_perfil);
+                break;
+            case 3:
+                holder.mImage.setImageResource(R.drawable.luis_perfil);
+                break;
+            case 4:
+                holder.mImage.setImageResource(R.drawable.sebas_perfil);
+                break;
+            default:
+                holder.mImage.setImageResource(R.drawable.sebas_perfil);
+                break;
+        }
+
+
         holder.mDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(v.getContext(),ActivityGym.class);
+                Intent intent = new Intent(v.getContext(), ActivityClimber.class);
                 v.getContext().startActivity(intent);
             }
         });
@@ -64,6 +70,23 @@ public class AdapterClimber extends RecyclerView.Adapter<AdapterClimber.ViewHold
 
     public int getItemCount() {
         return climbers.size();
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        public TextView mFirstName;
+        public TextView mLastName;
+        public TextView mGym;
+        public ImageView mImage;
+        public RelativeLayout mDetail;
+
+        public ViewHolder(View v) {
+            super(v);
+            mFirstName = v.findViewById(R.id.item_climber_firstname);
+            mLastName = v.findViewById(R.id.item_climber_lastname);
+            mImage = v.findViewById(R.id.item_climber_profile_picture);
+            mGym = v.findViewById(R.id.item_climber_gym);
+            mDetail = v.findViewById(R.id.item_climber_relative);
+        }
     }
 
 }

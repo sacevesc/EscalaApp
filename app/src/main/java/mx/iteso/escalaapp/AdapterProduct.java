@@ -25,31 +25,12 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
         this.gyms = products;
     }
 
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView mName;
-        public TextView mDescription;
-        public TextView mCity;
-        public ImageView mImage;
-        public RelativeLayout mDetail;
-
-        public ViewHolder(View v) {
-            super(v);
-            mName = v.findViewById(R.id.item_gym_name);
-            mCity = (TextView) v.findViewById(R.id.item_gym_city);
-            mImage = v.findViewById(R.id.item_gym_profile_picture);
-            mDetail = v.findViewById(R.id.item_gym_relative);
-        }
-    }
-
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_gym, parent, false);
         ViewHolder vh = new ViewHolder(v);
         return vh;
     }
-
-
 
     public void onBindViewHolder(ViewHolder holder, final int position) {
         holder.mName.setText(gyms.get(position).getName());
@@ -66,6 +47,21 @@ public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHold
 
     public int getItemCount() {
         return gyms.size();
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        public TextView mName;
+        public TextView mCity;
+        public ImageView mImage;
+        public RelativeLayout mDetail;
+
+        public ViewHolder(View v) {
+            super(v);
+            mName = v.findViewById(R.id.item_gym_name);
+            mCity = v.findViewById(R.id.item_gym_city);
+            mImage = v.findViewById(R.id.item_gym_profile_picture);
+            mDetail = v.findViewById(R.id.item_gym_relative);
+        }
     }
 
 }

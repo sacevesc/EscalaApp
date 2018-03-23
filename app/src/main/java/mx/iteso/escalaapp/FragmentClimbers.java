@@ -18,11 +18,10 @@ import mx.iteso.escalaapp.beans.Climber;
  * A simple {@link Fragment} subclass.
  */
 public class FragmentClimbers extends Fragment {
+    private RecyclerView.LayoutManager mLayoutManager;
     public FragmentClimbers() {
         // Required empty public constructor
     }
-    private RecyclerView.LayoutManager mLayoutManager;
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -38,9 +37,72 @@ public class FragmentClimbers extends Fragment {
         recyclerView.setLayoutManager(mLayoutManager);
 
         ArrayList<Climber> climbers = new ArrayList<>();
-        climbers.add(new Climber("Sebastián","Aceves",getResources().getDrawable(R.drawable.sebas_perfil)));
-        climbers.add(new Climber("Edric","Freyria",getResources().getDrawable(R.drawable.sebas_perfil)));
-        climbers.add(new Climber("Luis","AceVazquezves",getResources().getDrawable(R.drawable.sebas_perfil)));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
+        climbers.add(new Climber("Arturo", "Garcia", "Mantis", 0));
+        climbers.add(new Climber("German", "Sanchez", "", 1));
+        climbers.add(new Climber("Edric", "Freyria", "Motion Boulder", 2));
+        climbers.add(new Climber("Luis", "Vazquez", "", 3));
+        climbers.add(new Climber("Sebastián", "Aceves", "Rocodromo Ameyalli", 4));
 
         AdapterClimber adapterClimber = new AdapterClimber(climbers);
         recyclerView.setAdapter(adapterClimber);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EscalApp</string>
+    <string name="app_name">EscalaApp</string>
     <string name="login_user">User</string>
     <string name="log_in">Log In</string>
     <string name="sign_in">Sign In</string>
@@ -29,6 +29,7 @@
     <string name="competitions_comingup">Coming Up</string>
     <string name="competitions_comingup_more_info">More</string>
     <string name="competitions_comingup_register">Register</string>
+    <string name="competitions_ended_results">Results</string>
 
     <string name="competitions_live_results">Live Results</string>
 
@@ -55,7 +56,7 @@
     <string name="competition_judge_stop">Stop</string>
     <string name="competition_judge_undo">Undo</string>
 
-    <string name="hint_search">Search climbers</string>
+    <string name="hint_search">Search climbers...</string>
     <string name="hint_login">sacevesc@gmail.com</string>
 
     <string name="notification_judge_invitation">asked you to be a judge at</string>
@@ -78,4 +79,5 @@
     <string name="action_settings">Settings</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="compe_endend_date">30/11/1996</string>
 </resources>

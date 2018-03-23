@@ -1,7 +1,5 @@
 package mx.iteso.escalaapp.beans;
 
-import android.graphics.drawable.Drawable;
-
 /**
  * Created by aceve on 03/03/2018.
  */
@@ -9,11 +7,13 @@ import android.graphics.drawable.Drawable;
 public class Climber {
     private String firstname;
     private String lastname;
-    private Drawable photo;
+    private String gym;
+    private int photo;
 
-    public Climber(String firstname, String lastname, Drawable photo) {
+    public Climber(String firstname, String lastname, String gym, int photo) {
         this.firstname = firstname;
         this.lastname = lastname;
+        this.gym = gym;
         this.photo = photo;
     }
 
@@ -33,12 +33,19 @@ public class Climber {
         this.lastname = lastname;
     }
 
-    public Drawable getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
-    public void setPhoto(Drawable photo) {
+    public void setPhoto(int photo) {
         this.photo = photo;
     }
 
+    public String getGym() {
+        return gym;
+    }
+
+    public void setGym(String gym) {
+        this.gym = gym;
+    }
 }
