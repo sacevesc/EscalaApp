@@ -28,6 +28,7 @@
         <activity android:name=".ActivityGym" />
         <activity android:name=".ActivityClimber" />
         <activity android:name=".ActivityCompetition" />
+        <activity android:name=".ActivityJudging" />
     </application>
 
 </manifest>
