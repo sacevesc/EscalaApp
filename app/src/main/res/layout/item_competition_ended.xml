@@ -80,7 +80,6 @@
             android:layout_alignBottom="@+id/item_comp_ended_entrants_image"
             android:layout_marginLeft="@dimen/ten"
             android:layout_toEndOf="@+id/item_comp_ended_entrants_image"
-            android:text="30"
             android:textColor="@color/colorPrimaryDark" />
 
         <ImageView
@@ -101,8 +100,7 @@
             android:layout_below="@id/item_ended_info"
             android:layout_marginLeft="@dimen/eight"
             android:layout_toEndOf="@+id/item_comp_ended_date_image"
-            android:gravity="bottom"
-            android:text="@string/compe_endend_date" />
+            android:gravity="bottom" />
 
 
     </RelativeLayout>
