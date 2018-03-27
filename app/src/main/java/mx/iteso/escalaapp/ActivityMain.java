@@ -1,5 +1,6 @@
 package mx.iteso.escalaapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 /**
  * Created by aceve on 04/03/2018.
@@ -21,6 +24,8 @@ public class ActivityMain extends AppCompatActivity {
     private FragmentCompetitionEnded fragmentCompetitionEnded;
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
+    private ActivityMainCompetitions activityMainCompetitions;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +42,14 @@ public class ActivityMain extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
         tabLayout.setupWithViewPager(mViewPager);
+        ImageView imageView = findViewById(R.id.activity_main_profile);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityMain.this, ActivityClimber.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
@@ -78,15 +91,17 @@ public class ActivityMain extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+
             switch (position) {
                 case 0:
                     if (fragmentGym == null) fragmentGym = new FragmentGym();
                     return fragmentGym;
 
                 case 1:
-                    if (fragmentCompetitionEnded == null)
-                        fragmentCompetitionEnded = new FragmentCompetitionEnded();
-                    return fragmentCompetitionEnded;
+
+                    if (activityMainCompetitions == null)
+                        activityMainCompetitions = new ActivityMainCompetitions();
+                    return activityMainCompetitions;
 
                 case 2:
                     if (fragmentClimbers == null) fragmentClimbers = new FragmentClimbers();

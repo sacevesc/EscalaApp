@@ -20,13 +20,19 @@
         <activity
             android:name=".ActivityLogin"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ActivitySignIn"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".ActivityMain"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ActivityProfile" />
         <activity android:name=".ActivityGym" />
-        <activity android:name=".ActivityClimber" />
+        <activity
+            android:name=".ActivityClimber"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ActivityCompetition" />
         <activity android:name=".ActivityJudging" />
     </application>

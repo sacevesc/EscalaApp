@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class ActivityLogin extends AppCompatActivity {
     EditText name, password;
-    Button login;
+    Button login, signin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,14 @@ public class ActivityLogin extends AppCompatActivity {
                 Intent intent = new Intent(ActivityLogin.this, ActivityMain.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+        signin = findViewById(R.id.activity_login_signin_button);
+        signin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivityLogin.this, ActivitySignIn.class);
+                startActivity(intent);
             }
         });
     }

@@ -35,7 +35,7 @@ public class FragmentGym extends android.support.v4.app.Fragment {
         gyms.add(new Gym("Motion","motiva motion un lugar para boulderear", "Zapopan",getResources().getDrawable(R.drawable.motion)));
         gyms.add(new Gym("Bloc-e", "Para ser el mejor, escala con los mejores", "CDMX", getResources().getDrawable(R.drawable.bloce)));
 
-        AdapterProduct adapterProduct = new AdapterProduct(gyms);
+        AdapterGym adapterProduct = new AdapterGym(gyms);
         recyclerView.setAdapter(adapterProduct);
         return view;
     }

@@ -1,56 +1,7 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical">
-
-        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/fragment_recycler_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.9"
+    android:layout_height="wrap_content"
             android:scrollbarStyle="outsideInset">
-
         </android.support.v7.widget.RecyclerView>
 
-
-        <LinearLayout
-            android:id="@+id/competition_tabs"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.1"
-            android:orientation="horizontal">
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="@dimen/no_dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="33"
-                android:text="@string/competitions_ended"
-                android:textSize="@dimen/fifeteen_sp" />
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="@dimen/no_dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/two"
-                android:layout_marginRight="@dimen/two"
-                android:layout_weight="33"
-                android:text="@string/competitions_comingup"
-                android:textSize="@dimen/fifeteen_sp" />
-
-            <Button
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="@dimen/no_dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="33"
-                android:text="@string/competitions_comingup"
-                android:textSize="@dimen/fifeteen_sp" />
-
-        </LinearLayout>
-    </LinearLayout>
-</RelativeLayout>

@@ -4,7 +4,7 @@ package mx.iteso.escalaapp.beans;
  * Created by aceve on 04/03/2018.
  */
 
-public class CompetitionEnded {
+public class Competition {
     private String comp_name;
     private String gym;
     private String Description;
@@ -12,7 +12,7 @@ public class CompetitionEnded {
     private String participants;
     private String date;
 
-    public CompetitionEnded(String comp_name, String gym, String description, int photo, String participants, String date) {
+    public Competition(String comp_name, String gym, String description, int photo, String participants, String date) {
         this.comp_name = comp_name;
         this.gym = gym;
         Description = description;
@@ -23,7 +23,7 @@ public class CompetitionEnded {
 
     @Override
     public String toString() {
-        return "CompetitionEnded{" +
+        return "Competition{" +
                 "comp_name='" + comp_name + '\'' +
                 ", gym='" + gym + '\'' +
                 ", Description='" + Description + '\'' +

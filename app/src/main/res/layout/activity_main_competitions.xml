@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.95">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="mx.iteso.escalaapp.ActivityMainCompetitions">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <LinearLayout
+            android:id="@+id/competition_tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fragment_ended_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/no_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/competitions_ended"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/fifeteen_sp" />
+
+            <Button
+                android:id="@+id/fragment_live_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/no_dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/two"
+                android:layout_marginRight="@dimen/two"
+                android:layout_weight="1"
+                android:text="@string/competitions_live"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fifeteen_sp" />
+
+            <Button
+                android:id="@+id/fragment_comingup_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/no_dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/competitions_comingup"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fifeteen_sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

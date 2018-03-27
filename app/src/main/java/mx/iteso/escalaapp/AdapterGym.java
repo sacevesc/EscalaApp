@@ -18,11 +18,12 @@ import mx.iteso.escalaapp.beans.Gym;
  */
 
 
-public class AdapterProduct extends RecyclerView.Adapter<AdapterProduct.ViewHolder> {
+public class AdapterGym extends RecyclerView.Adapter<AdapterGym.ViewHolder> {
 
     ArrayList<Gym> gyms;
-    public AdapterProduct(ArrayList<Gym> products) {
-        this.gyms = products;
+
+    public AdapterGym(ArrayList<Gym> gyms) {
+        this.gyms = gyms;
     }
 
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

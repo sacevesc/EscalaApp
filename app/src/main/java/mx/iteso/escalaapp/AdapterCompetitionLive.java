@@ -17,28 +17,28 @@ import mx.iteso.escalaapp.beans.Competition;
  * Created by aceve on 12/03/2018.
  */
 
-public class AdapterCompetitionEnded extends RecyclerView.Adapter<AdapterCompetitionEnded.ViewHolder> {
+public class AdapterCompetitionLive extends RecyclerView.Adapter<AdapterCompetitionLive.ViewHolder> {
 
-    ArrayList<Competition> compsEnded;
+    ArrayList<Competition> compsLive;
 
-    public AdapterCompetitionEnded(ArrayList<Competition> compsEnded) {
-        this.compsEnded = compsEnded;
+    public AdapterCompetitionLive(ArrayList<Competition> compsLive) {
+        this.compsLive = compsLive;
     }
 
-    public AdapterCompetitionEnded.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public AdapterCompetitionLive.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_competition_ended, parent, false);
-        AdapterCompetitionEnded.ViewHolder vh = new AdapterCompetitionEnded.ViewHolder(v);
+                .inflate(R.layout.item_competition_live, parent, false);
+        AdapterCompetitionLive.ViewHolder vh = new AdapterCompetitionLive.ViewHolder(v);
         return vh;
     }
 
-    public void onBindViewHolder(AdapterCompetitionEnded.ViewHolder holder, final int position) {
-        holder.mCompName.setText(compsEnded.get(position).getComp_name());
-        holder.mGym.setText(compsEnded.get(position).getGym());
-        holder.mParticipants.setText(compsEnded.get(position).getParticipants());
-        holder.mDate.setText(compsEnded.get(position).getDate());
+    public void onBindViewHolder(AdapterCompetitionLive.ViewHolder holder, final int position) {
+        holder.mCompName.setText(compsLive.get(position).getComp_name());
+        holder.mGym.setText(compsLive.get(position).getGym());
+        holder.mParticipants.setText(compsLive.get(position).getParticipants());
+        holder.mDate.setText(compsLive.get(position).getDate());
 
-        switch (compsEnded.get(position).getImage()) {
+        switch (compsLive.get(position).getImage()) {
             case 0:
                 holder.mImage.setImageResource(R.drawable.ameyalli);
                 break;
@@ -63,7 +63,11 @@ public class AdapterCompetitionEnded extends RecyclerView.Adapter<AdapterCompeti
     }
 
     public int getItemCount() {
-        return compsEnded.size();
+        try {
+            return compsLive.size();
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -76,13 +80,12 @@ public class AdapterCompetitionEnded extends RecyclerView.Adapter<AdapterCompeti
 
         public ViewHolder(View v) {
             super(v);
-            mCompName = v.findViewById(R.id.item_comp_ended_name);
-            mGym = v.findViewById(R.id.item_comp_ended_gym);
-            mParticipants = v.findViewById(R.id.item_comp_ended_entrants);
-            mDetail = v.findViewById(R.id.item_ended_relative);
+            mCompName = v.findViewById(R.id.item_comp_live_name);
+            mGym = v.findViewById(R.id.item_comp_live_gym);
+            mParticipants = v.findViewById(R.id.item_comp_live_entrants);
+            mDetail = v.findViewById(R.id.item_live_relative);
             mImage = v.findViewById(R.id.item_gym_profile_picture);
-            mDate = v.findViewById(R.id.item_comp_ended_date);
+            mDate = v.findViewById(R.id.item_comp_live_date);
         }
     }
-
 }

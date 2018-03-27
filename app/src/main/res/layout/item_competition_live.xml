@@ -9,13 +9,13 @@
     card_view:cardCornerRadius="4dp">
 
     <RelativeLayout
-        android:id="@+id/item_ended_relative"
+        android:id="@+id/item_live_relative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/five">
 
         <LinearLayout
-            android:id="@+id/item_ended_info"
+            android:id="@+id/item_live_info"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/twenty"
@@ -28,7 +28,7 @@
                 android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_weight="0.2"
-                android:src="@drawable/ameyalli"></ImageView>
+                android:src="@drawable/ameyalli" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -39,13 +39,13 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/item_comp_ended_name"
+                    android:id="@+id/item_comp_live_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimaryDark" />
 
                 <TextView
-                    android:id="@+id/item_comp_ended_gym"
+                    android:id="@+id/item_comp_live_gym"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorPrimary" />
@@ -53,54 +53,55 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/item_comp_live_more"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginRight="@dimen/five"
+                android:layout_marginEnd="@dimen/five"
                 android:layout_weight="0.29"
                 android:background="@drawable/button_1"
-                android:text="@string/competitions_ended_results"
+                android:text="@string/competitions_live_results"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="12sp" />
 
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/item_comp_ended_entrants_image"
+            android:id="@+id/item_comp_live_entrants_image"
             android:layout_width="15dp"
             android:layout_height="22dp"
-            android:layout_below="@id/item_ended_info"
-            android:layout_marginLeft="@dimen/ten"
+            android:layout_below="@id/item_live_info"
+            android:layout_marginStart="@dimen/ten"
             android:background="@drawable/climber"
             android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/item_comp_ended_entrants"
+            android:id="@+id/item_comp_live_entrants"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/item_comp_ended_entrants_image"
-            android:layout_marginLeft="@dimen/ten"
-            android:layout_toEndOf="@+id/item_comp_ended_entrants_image"
+            android:layout_alignBottom="@+id/item_comp_live_entrants_image"
+            android:layout_marginStart="@dimen/ten"
+            android:layout_toEndOf="@+id/item_comp_live_entrants_image"
             android:textColor="@color/colorPrimaryDark" />
 
         <ImageView
-            android:id="@+id/item_comp_ended_date_image"
+            android:id="@+id/item_comp_live_date_image"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_below="@+id/item_ended_info"
+            android:layout_below="@+id/item_live_info"
             android:layout_marginStart="@dimen/twenty"
-            android:layout_toEndOf="@+id/item_comp_ended_entrants"
+            android:layout_toEndOf="@+id/item_comp_live_entrants"
             android:background="@drawable/calendar"
             android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/item_comp_ended_date"
+            android:id="@+id/item_comp_live_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/item_comp_ended_entrants_image"
+            android:layout_alignBottom="@+id/item_comp_live_entrants_image"
             android:layout_below="@id/item_ended_info"
-            android:layout_marginLeft="@dimen/eight"
-            android:layout_toEndOf="@+id/item_comp_ended_date_image"
+            android:layout_marginStart="@dimen/eight"
+            android:layout_toEndOf="@+id/item_comp_live_date_image"
             android:gravity="bottom" />
 
 

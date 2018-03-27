@@ -1,9 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="mx.iteso.escalaapp.ActivityClimber">
 
-</android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/climber_profile_picture"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fifeteen"
+        android:src="@drawable/sebas_perfil" />
+
+    <TextView
+        android:id="@+id/climber_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/climber_profile_picture"
+        android:layout_centerHorizontal="true"
+        android:text="Sebastián Aceves"
+        android:textSize="@dimen/twenty_five_sp" />
+
+    <LinearLayout
+        android:id="@+id/climber_social_networks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/climber_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/five"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/climber_facebook_logo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="@dimen/ten"
+            android:background="@drawable/fb_logo_50" />
+
+        <ImageButton
+            android:id="@+id/climber_instagram_logo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="@dimen/ten"
+            android:layout_marginStart="@dimen/ten"
+            android:background="@drawable/instagram_logo" />
+
+        <ImageButton
+            android:id="@+id/climber_twitter_logo"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="@dimen/ten"
+            android:background="@drawable/twitter_logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/climber_description"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/climber_social_networks"
+        android:layout_margin="@dimen/five"
+        android:layout_marginBottom="@dimen/ten"
+        android:gravity="center"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        android:text="@string/descripcion_prueba"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/climber_gym_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/climber_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/five"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/climber_gym_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="@dimen/four" />
+
+        <TextView
+            android:id="@+id/climber_gym_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/four"
+            android:text="Rocodromo Ameyalli"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/climber_city_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/climber_gym_info"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/climber_city_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="@dimen/four" />
+
+        <TextView
+            android:id="@+id/climber_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/four"
+            android:text="Guadalajara, Jalisco."
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/climber_results_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/climber_city_info"
+        android:layout_alignStart="@+id/climber_gym_info"
+        android:layout_below="@+id/climber_city_info"
+        android:layout_marginTop="@dimen/twenty_five"
+        android:background="@drawable/button_2"
+        android:text="@string/climber_profile_results"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>
