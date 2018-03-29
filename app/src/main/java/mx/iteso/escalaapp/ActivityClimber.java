@@ -20,13 +20,12 @@ public class ActivityClimber extends AppCompatActivity {
         Bitmap originalBitmap = ((BitmapDrawable) originalDrawable).getBitmap();
 
         //creamos el drawable redondeado
-        RoundedBitmapDrawable roundedDrawable =
-                RoundedBitmapDrawableFactory.create(getResources(), originalBitmap);
+        RoundedBitmapDrawable roundedDrawable = RoundedBitmapDrawableFactory.create(getResources(), originalBitmap);
 
         //asignamos el CornerRadius
         roundedDrawable.setCornerRadius(originalBitmap.getHeight());
 
-        ImageView imageView = (ImageView) findViewById(R.id.climber_profile_picture);
+        ImageView imageView = findViewById(R.id.climber_profile_picture);
 
         imageView.setImageDrawable(roundedDrawable);
     }

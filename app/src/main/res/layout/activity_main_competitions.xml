@@ -1,78 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ActivityMain">
+    android:fitsSystemWindows="true"
+    tools:context="mx.iteso.escalaapp.ActivityMainCompetitions">
 
-    <LinearLayout
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.95">
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/main_content"
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context="mx.iteso.escalaapp.ActivityMainCompetitions">
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="snap|scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
 
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/fragment_recycler_view"
+            <RelativeLayout
+                android:id="@+id/titulo_appbar"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                android:layout_height="wrap_content">
 
-        </android.support.design.widget.CoordinatorLayout>
-    </LinearLayout>
+                <ImageView
+                    android:id="@+id/activity_main_profile"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/image_rounded_toolbar"
+                    android:src="@drawable/icono_blanco" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
 
         <LinearLayout
-            android:id="@+id/competition_tabs"
-            android:layout_width="wrap_content"
+            android:id="@+id/button_tabs"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.1"
+            android:background="@color/colorPrimary"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/fragment_ended_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="@dimen/no_dp"
+                android:id="@+id/main_gyms_button"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/competitions_ended"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/fifeteen_sp" />
+                android:alpha="0.5"
+                android:background="@drawable/tabs"
+                android:text="@string/tab_gyms"
+                android:textColor="@color/colorWhite" />
 
             <Button
-                android:id="@+id/fragment_live_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="@dimen/no_dp"
+                android:id="@+id/main_comps_button"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/two"
-                android:layout_marginRight="@dimen/two"
                 android:layout_weight="1"
-                android:text="@string/competitions_live"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/fifeteen_sp" />
+                android:alpha="1"
+                android:background="@drawable/tabs"
+                android:text="@string/tab_competitions"
+                android:textColor="@color/colorWhite" />
 
             <Button
-                android:id="@+id/fragment_comingup_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="@dimen/no_dp"
+                android:id="@+id/main_climbers_button"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/competitions_comingup"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/fifeteen_sp" />
+                android:alpha="0.5"
+                android:background="@drawable/tabs"
+                android:text="@string/tab_climbers"
+                android:textColor="@color/colorWhite" />
 
-        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs"
+        android:layout_below="@id/appbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="fixed" />
+
+
+</RelativeLayout>

@@ -27,7 +27,7 @@
     <string name="competitions_results_qualifications">Qualifications</string>
 
     <string name="competitions_ended">Ended</string>
-    <string name="competitions_live">live</string>
+    <string name="competitions_live">Live</string>
     <string name="competitions_comingup">Coming Up</string>
     <string name="competitions_comingup_more_info">More</string>
     <string name="competitions_comingup_register">Register</string>
@@ -81,7 +81,8 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="competitions_ended_results">Results</string>
-    <string name="descripcion_prueba">Esta es una prueba del perfil de un escaldor haber cuantas palabras se escriben y que no se vea tan mal, asi que aqui va otra y una mas asi es que no lo hay gracias a la comida de mañana sera un nuevo dia .</string>
+    <string name="descripcion_prueba">Esta es una prueba del perfil de un escaldor haber cuantas palabras se escriben y que no se vea tan mal,
+        asi que aqui va otra y una mas asi es que no lo hay gracias a la comida de mañana sera un nuevo dia .</string>
 
     <string-array name="round">
         <item>Qualifications</item>
@@ -89,11 +90,137 @@
         <item>Semifinal</item>
     </string-array>
 
+    <string-array name="ciudades">
+        <item> Ciudad de México</item>
+        <item> Aguascalientes </item>
+        <item> Ensenada</item>
+        <item> Mexicali </item>
+        <item> Tijuana </item>
+        <item> La Paz </item>
+        <item>Los Cabos</item>
+        <item>	Campeche	</item>
+        <item>	Ciudad del Carmen	</item>
+        <item>	Saltillo	</item>
+        <item>	Monclova-Frontera	</item>
+        <item>	La Laguna	</item>
+        <item>	Piedras Negras	</item>
+        <item>	Tecomán	</item>
+        <item>	Colima-Villa de Álvarez	</item>
+        <item>	Manzanillo	</item>
+        <item>	Tuxtla Gutiérrez	</item>
+        <item>	Tapachula	</item>
+        <item>	Chihuahua	</item>
+        <item>	Juárez	</item>
+        <item>	Valle de México	</item>
+        <item>	Durango	</item>
+        <item>	Celaya	</item>
+        <item>	Guanajuato	</item>
+        <item>	Irapuato	</item>
+        <item>	León	</item>
+        <item>	La Piedad-Pénjamo	</item>
+        <item>	San Francisco del Rincón	</item>
+        <item>	Salamanca	</item>
+        <item>	Acapulco	</item>
+        <item>	Chilpancingo	</item>
+        <item>	Tula	</item>
+        <item>	Tulancingo	</item>
+        <item>	Pachuca	</item>
+        <item>	Guadalajara	</item>
+        <item>	Ocotlán	</item>
+        <item>	Puerto Vallarta	</item>
+        <item>	Toluca	</item>
+        <item>	Zamora-Jacona	</item>
+        <item>	Morelia	</item>
+        <item>	Uruapan	</item>
+        <item>	Cuautla	</item>
+        <item>	Cuernavaca	</item>
+        <item>	Tepic	</item>
+        <item>	Monterrey	</item>
+        <item>	Oaxaca	</item>
+        <item>	Tehuantepec-Salina Cruz	</item>
+        <item>	Puebla-Tlaxcala	</item>
+        <item>	Tehuacán	</item>
+        <item>	Querétaro	</item>
+        <item>	San Juan del Río	</item>
+        <item>	Cancún	</item>
+        <item>	Chetumal	</item>
+        <item>	Rioverde-Ciudad Fernández	</item>
+        <item>	San Luis Potosí-Soledad	</item>
+        <item>	Los Mochis	</item>
+        <item>	Culiacán	</item>
+        <item>	Mazatlán	</item>
+        <item>	Ciudad Obregón	</item>
+        <item>	Guaymas	</item>
+        <item>	Hermosillo	</item>
+        <item>	Cárdenas	</item>
+        <item>	Villahermosa	</item>
+        <item>	Tampico-Pánuco	</item>
+        <item>	Matamoros	</item>
+        <item>	Nuevo Laredo	</item>
+        <item>	Reynosa-Río Bravo	</item>
+        <item>	Ciudad Victoria	</item>
+        <item>	Tlaxcala-Apizaco	</item>
+        <item>	Veracruz	</item>
+        <item>	Córdoba	</item>
+        <item>	Orizaba	</item>
+        <item>	Xalapa	</item>
+        <item>	Poza Rica	</item>
+        <item>	Coatzacoalcos	</item>
+        <item>	Minatitlán	</item>
+        <item>	Mérida	</item>
+        <item>	Zacatecas-Guadalupe	</item>
+    </string-array>
+
+
+    <string-array name="estados">
+        <item>	Aguascalientes	</item>
+        <item>	Baja California	</item>
+        <item>	Campeche	</item>
+        <item>	Coahuila de Zaragoza	</item>
+        <item>	Colima	</item>
+        <item>	Chiapas	</item>
+        <item>	Chihuahua	</item>
+        <item>	Ciudad de México </item>
+        <item>	Durango	</item>
+        <item>	Guanajuato	</item>
+        <item>	Guerrero	</item>
+        <item>	Hidalgo	</item>
+        <item>	Jalisco	</item>
+        <item>	México	</item>
+        <item>	Michoacán de Ocampo	</item>
+        <item>	Morelos	</item>
+        <item>	Nayarit	</item>
+        <item>	Nuevo León	</item>
+        <item>	Oaxaca	</item>
+        <item>	Puebla	</item>
+        <item>	Querétaro	</item>
+        <item>	Quintana Roo	</item>
+        <item>	San Luis Potosí	</item>
+        <item>	Sinaloa	</item>
+        <item>	Sonora	</item>
+        <item>	Tabasco	</item>
+        <item>	Tamaulipas	</item>
+        <item>	Tlaxcala	</item>
+        <item>	Veracruz de Ignacio de la Llave	</item>
+        <item>	Yucatán	</item>
+        <item>	Zacatecas	</item>
+    </string-array>
+
+
     <string-array name="array_boulders">
         <item>1</item>
         <item>2</item>
         <item>3</item>
     </string-array>
+
+    <string-array name="muros">
+        <item>Rocódromo Ameyalli</item>
+        <item>Motion Boulder</item>
+        <item>Mantis</item>
+        <item>Bloc-e</item>
+    </string-array>
+
+
     <string name="title_activity_prueb">ActivityPRUEBA</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"

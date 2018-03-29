@@ -21,7 +21,7 @@ public class ActivitySplashScreen extends AppCompatActivity {
                 User user = loadUser();
                 Intent intent;
                 if (user.getIslogged()) {
-                    intent = new Intent(ActivitySplashScreen.this, ActivityMain.class);
+                    intent = new Intent(ActivitySplashScreen.this, ActivityMainCompetitions.class);
                 } else {
                     intent = new Intent(ActivitySplashScreen.this, ActivityLogin.class);
                 }

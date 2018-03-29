@@ -19,7 +19,7 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/thirty_five"
+            android:layout_height="45dp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="?attr/colorPrimary"
@@ -32,10 +32,10 @@
 
                 <ImageView
                     android:id="@+id/activity_main_profile"
-                    android:layout_width="40dp"
-                    android:layout_height="50dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:background="@drawable/image_rounded_toolbar"
-                    android:src="@drawable/profile_icon" />
+                    android:src="@drawable/icono_blanco" />
 
                 <TextView
                     android:layout_width="match_parent"

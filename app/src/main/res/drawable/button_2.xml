@@ -10,7 +10,6 @@
             </item>
             <item android:bottom="2dp" android:right="2dp">
                 <color android:color="#FFFFFF"></color>
-
                 <shape>
 
                     <stroke android:width="4dp" android:color="@color/colorPrimaryDark" />

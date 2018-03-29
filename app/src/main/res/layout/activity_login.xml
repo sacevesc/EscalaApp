@@ -13,7 +13,7 @@
         android:layout_height="@dimen/no_dp"
         android:layout_marginBottom="@dimen/ten"
         android:layout_weight="2.7"
-        android:background="@color/colorGrayGreen"
+        android:background="@color/colorPrimaryDark"
         android:gravity="center|bottom"
         android:padding="@dimen/fifty"
         android:text="@string/app_name"
@@ -38,26 +38,35 @@
         android:hint="Username or mail"
         android:inputType="textEmailAddress"
         android:maxLines="1"
-        android:textColor="@color/colorPrimary" />
+        android:textColor="@color/colorPrimaryDark" />
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
-        <EditText
-            android:id="@+id/activity_login_password"
-            android:layout_width="match_parent"
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/ten"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:hint="Password"
-            android:inputType="textVisiblePassword"
-            android:maxLines="1"
-            android:textColor="@color/colorPrimary" />
-    </android.support.design.widget.TextInputLayout>
+            android:layout_weight="0.9">
+
+            <EditText
+                android:id="@+id/activity_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/ten"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryDark" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/activity_login_button"
@@ -69,18 +78,20 @@
         android:layout_weight="0.8"
         android:background="@drawable/button_1"
         android:text="@string/log_in"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/twelve_sp" />
     <Button
         android:id="@+id/activity_login_signin_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginBottom="@dimen/twenty"
         android:layout_marginLeft="@dimen/twenty"
         android:layout_marginRight="@dimen/twenty"
         android:layout_weight="0.8"
         android:background="@drawable/button_1"
         android:text="@string/sign_in"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/twelve_sp" />
 
 
 </LinearLayout>

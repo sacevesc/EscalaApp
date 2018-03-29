@@ -24,7 +24,7 @@ public class ActivityLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveUser();
-                Intent intent = new Intent(ActivityLogin.this, ActivityMain.class);
+                Intent intent = new Intent(ActivityLogin.this, ActivityMainCompetitions.class);
                 startActivity(intent);
                 finish();
             }
@@ -37,6 +37,7 @@ public class ActivityLogin extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 
     public void saveUser() {

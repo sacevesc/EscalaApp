@@ -54,7 +54,7 @@ public class AdapterClimber extends RecyclerView.Adapter<AdapterClimber.ViewHold
                 holder.mImage.setImageResource(R.drawable.sebas_perfil);
                 break;
             default:
-                holder.mImage.setImageResource(R.drawable.sebas_perfil);
+                holder.mImage.setImageResource(R.drawable.keko_perfil);
                 break;
         }
 

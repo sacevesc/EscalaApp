@@ -7,6 +7,7 @@
     <dimen name="four">4dp</dimen>
     <dimen name="five">5dp</dimen>
     <dimen name="eight">8dp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
     <dimen name="ten">10dp</dimen>
     <dimen name="twelve_sp">12sp</dimen>
     <dimen name="fifeteen">15dp</dimen>

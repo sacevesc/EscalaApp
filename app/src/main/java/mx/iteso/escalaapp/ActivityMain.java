@@ -1,4 +1,4 @@
-package mx.iteso.escalaapp;
+/*package mx.iteso.escalaapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,16 +17,16 @@ import android.widget.ImageView;
 /**
  * Created by aceve on 04/03/2018.
  */
-
+/*
 public class ActivityMain extends AppCompatActivity {
-    private FragmentGym fragmentGym;
-    private FragmentClimbers fragmentClimbers;
+    private ActivityMainGyms fragmentGym;
+    private ActivityMainClimbers fragmentClimbers;
     private FragmentCompetitionEnded fragmentCompetitionEnded;
     private SectionsPagerAdapter mSectionsPagerAdapter;
     private ViewPager mViewPager;
     private ActivityMainCompetitions activityMainCompetitions;
 
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +79,7 @@ public class ActivityMain extends AppCompatActivity {
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
      */
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+ /*   public class SectionsPagerAdapter extends FragmentPagerAdapter {
         private FragmentManager fm;
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -94,7 +94,7 @@ public class ActivityMain extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    if (fragmentGym == null) fragmentGym = new FragmentGym();
+                    if (fragmentGym == null) fragmentGym = new ActivityMainGyms();
                     return fragmentGym;
 
                 case 1:
@@ -104,10 +104,10 @@ public class ActivityMain extends AppCompatActivity {
                     return activityMainCompetitions;
 
                 case 2:
-                    if (fragmentClimbers == null) fragmentClimbers = new FragmentClimbers();
+                    if (fragmentClimbers == null) fragmentClimbers = new ActivityMainClimbers();
                     return fragmentClimbers;
                 default:
-                    return new FragmentGym();
+                    return new ActivityMainGyms();
             }
         }
 
@@ -132,3 +132,4 @@ public class ActivityMain extends AppCompatActivity {
     }
 
 }
+*/

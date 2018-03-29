@@ -4,16 +4,13 @@
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <corners android:radius="@dimen/four" />
-            <stroke android:width="@dimen/two" android:color="@color/colorGrayGreen" />
 
         </shape>
     </item>
 
     <item>
-        <shape android:shape="oval">
+        <shape android:shape="rectangle">
             <corners android:radius="4dp" />
-            <solid android:color="@color/colorWhite" />
-            <stroke android:width="2dip" android:color="@color/colorPrimary" />
 
         </shape>
     </item>
