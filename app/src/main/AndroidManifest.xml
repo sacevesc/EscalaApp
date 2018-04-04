@@ -33,12 +33,16 @@
         <activity android:name=".ActivityClimber" />
         <activity android:name=".ActivityCompetition" />
         <activity android:name=".ActivityJudging" />
-        <activity android:name=".ActivityResults"></activity>
+        <activity android:name=".ActivityResults" />
         <activity
             android:name=".ActivityMainGyms"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ActivityMainClimbers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityMain"
+            android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="mx.iteso.escalaapp.ActivityMain">
+    tools:context="mx.iteso.escalaapp.ActivityMainClimbers">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -50,20 +50,53 @@
 
         </android.support.v7.widget.Toolbar>
 
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tabs"
+        <LinearLayout
+            android:id="@+id/button_tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:tabGravity="fill"
-            app:tabMode="fixed" />
+            android:layout_below="@id/appbar"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/main_gyms_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:background="@drawable/tabs"
+                android:text="@string/tab_gyms"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/main_comps_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:background="@drawable/tabs"
+                android:text="@string/tab_competitions"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/main_climbers_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="1"
+                android:background="@drawable/tabs"
+                android:text="@string/tab_climbers"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/container"
+
+    <include
+        layout="@layout/fragment_climbers"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:layout_below="@id/appbar" />
 
-</android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

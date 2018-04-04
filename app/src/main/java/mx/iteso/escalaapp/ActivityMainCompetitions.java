@@ -133,6 +133,8 @@ public class ActivityMainCompetitions extends AppCompatActivity {
                 if (fragmentCompetitionComingUp == null)
                     fragmentCompetitionComingUp = new FragmentCompetitionComingUp();
                 return fragmentCompetitionComingUp;
+            case 3:
+            case 4:
             default:
                 return new FragmentCompetitionLive();
         }
@@ -141,7 +143,7 @@ public class ActivityMainCompetitions extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 5;
         }
 
         @Override
